@@ -1,0 +1,65 @@
+version 1 -----------------------------
+
+if __name__ == '__main__':
+    records=[]
+    for _ in range(int(input())):
+        name = input().strip()
+        score = float(input())
+        records.append([score,name])
+
+    maxi=max([x[0] for x in records])
+    second=0
+    records.sort(reverse=True)
+    
+    print(records)
+    print(maxi)
+    
+    for i in range (len(records)):
+        if i==0:
+            continue
+        print(records[i][0])
+        if records[i][0]< maxi:
+            print('second',records[i])
+            second=records[i][0]  
+        if records[i+1][0]==second:
+            continue
+        break
+
+
+
+version 2 (working) --------------------------------------
+
+if __name__ == '__main__':
+    records=[]
+    for _ in range(int(input())):
+        name = input().strip()
+        score = float(input())
+        records.append([score,name])
+
+    mini=min([x[0] for x in records])
+    second=0
+    secondl=[]
+    records.sort()
+    
+    for i in range (1,len(records)):
+        #if i==0:
+            #continue
+       
+        if records[i][0] > mini:
+            secondl.append([records[i][1],records[i][0]])
+            #print('second',records[i])
+            
+            second=records[i][0]  
+        if records[i+1][0]==second:
+            continue
+        break
+def myfun(e):
+    return e[0].lower()
+
+secondl.sort(key=myfun)    
+for i in secondl:
+    print(i[0])
+
+
+    
+    
