@@ -3,14 +3,14 @@
 # i would really appreciate if you have any other interation of this rangoli.
 
 d='abcdefghijklmnopqrstuvwxyz'
-n=int(input())
-n1=n-2    # top side left
-n2=0      # top side right
+n=int(input('Enter the number(1-26): '))
+n1=n-2      # top side left
+n2=0        # top side right
 
-n3=1      # bottom right + left
+n3=1        # bottom right + left
 
-bit=4*n-3   #length
-t=2*n-1     #breadth
+bit=4*n-3   # length
+t=2*n-1     # breadth
 
 
 

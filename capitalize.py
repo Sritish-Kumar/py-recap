@@ -2,6 +2,7 @@
 ## capitalize the first letter of every word
 #!/bin/python3
 
+
 import math
 import os
 import random
