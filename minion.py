@@ -6,9 +6,9 @@
 
 
 
-print('minion game\n')
+print(' - - minion game - -\n')
 v='AEIOU'
-s=input().strip()#'BANANA'
+s=input().strip().upper()#'BANANA'
 
 st={}
 ke={}
