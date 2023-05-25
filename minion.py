@@ -1,5 +1,5 @@
 # this particular code lacks a lot of things
-# it failed 10 out of 15 test on hacker rank (runtime error)
+# it failed 8 out of 15 test on hacker rank (runtime error)
 # I would really appreciate if anybody could try and mold this so that it can pass all the tests.
 #------------ IGNORE THE CAPITAL OUTPUT
 
