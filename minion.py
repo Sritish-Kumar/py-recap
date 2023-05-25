@@ -1,17 +1,37 @@
+# this particular code lacks a lot of things
+# it failed 10 out of 15 test on hacker rank (runtime error)
+# I would really appreciate if anybody could try and mold this so that it can pass all the tests.
+#------------ IGNORE THE CAPITAL OUTPUT
+
+
+
+
 print('minion game\n')
-v='aeiou'
-s='banana'
+v='AEIOU'
+s=input().strip()#'BANANA'
 
 st={}
+ke={}
+
 r=1
 def score():
     s=0
     for i in st:
         s+=st[i]
-    return s
+    k=0
+    for i in ke:
+        k+=ke[i]
+    
+    if k > s:
+        return 'KEVIN',str(k)
+    elif k==s:
+        return 'DRAW',
+    else:
+        return 'STUART',str(s)
+    
 
 
-                                # stuart - ----> consonant
+                                # stuart ------> consonant
 while True:
     
     for i in range(len(s)):
@@ -25,13 +45,27 @@ while True:
                 st[s[i:i+r]]=1
             else:
                 st[s[i:i+r]]+=1
+
+                            # kevin -------------->  vowels
+        if s[i] in v:
+
+            if len(s[i:i+r])!=r:
+                continue
+
+            if (s[i:i+r]) not in ke:
+                ke[s[i:i+r]]=1
+            else:
+                ke[s[i:i+r]]+=1
+        
     r+=1
     if  r==len(s)+1:
         break
     
 
+
+
 result= score()
-print(result)
+print(' '.join(result))
 
 
 
