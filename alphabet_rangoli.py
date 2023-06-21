@@ -1,6 +1,6 @@
 # ALPHABET RANGOLI
 # N=int. if n=3 then it would make a rangoli with the 3rd letter "c" as its sides. 
-# i would really appreciate if you have any other interation of this rangoli.
+# i would really appreciate if you have any other iteration of this rangoli.
 
 d='abcdefghijklmnopqrstuvwxyz'
 n=int(input('Enter the number(1-26): '))
