@@ -14,7 +14,6 @@ def cut(i):
     try:
         r=s.index(i)
         return
-        print('found',i)
     except:
         print(i)
 
